@@ -1,0 +1,24 @@
+Package: mzfinder
+Title: An Amazing Shiny App
+Version: 0.0.0.9000
+Authors@R: person("firstname", "lastname", email = "your@email.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+biocViews:
+Imports: 
+    shiny,
+    golem,
+    data.table,
+    mzR,
+    shinybusy,
+    DT,
+    pkgload,
+    plotly,
+    graphics
+Depends: R (>= 2.10)
+RoxygenNote: 7.0.2
+Suggests: 
+    testthat (>= 2.1.0),
+    processx
