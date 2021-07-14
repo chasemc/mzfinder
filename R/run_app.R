@@ -9,6 +9,6 @@ run_app <- function(...) {
   with_golem_options(
     app = shinyApp(ui = app_ui,
                    server = app_server), 
-    golem_opts = list(...)
+    golem_opts = list(maxUploadSize=30*1024^2)
   )
 }
