@@ -1,7 +1,7 @@
 #' @import shiny
 app_server <- function(input, output, session) {
   
-  options(shiny.maxRequestSize = 300 * 1024^2)
+  options(shiny.maxRequestSize = 900 * 1024^2)
   
   ms_object <- reactiveValues(mzr_connection = NULL,
                               header = NULL)
