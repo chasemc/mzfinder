@@ -6,6 +6,9 @@
 \usage{
 read_npatlas()
 }
+\arguments{
+\item{path}{path to database tsv}
+}
 \value{
 data.table
 }

@@ -16,7 +16,7 @@ plotly_mz_rt <- function(npatlas,
   precursorMZ <- retentionTime <- basePeakIntensity <- NULL
   
   
-range02 <- function(x){ (x - min(x)) / (max(x) - min(x)) * (10 - 1) + 1 }
+range02 <- function(x){ (x - max(x)) / (max(x) - max(x)) * (10 - 1) + 1 }
 pal <- c("gray", "red")
 cols <- rep(0L, nrow(ms_object$header))
 cols <- color_if_found(cols = cols,

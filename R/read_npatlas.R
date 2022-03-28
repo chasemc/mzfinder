@@ -2,11 +2,8 @@
 #' @param path path to database tsv
 #' @return data.table
 #' @export
-#'
-read_npatlas <- function(path){
-  path <- list.files(path, 
-                     full.names = TRUE,
-                     pattern = "np_atlas")
-  data.table::fread(path)
-  
+#' 
+#' @importFrom data.table fread
+read_npatlas <- function(){
+  fread("https://www.npatlas.org/static/downloads/NPAtlas_download.tsv", sep="\t")
 }
